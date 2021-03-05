@@ -2,13 +2,16 @@ package com.trial.prince.service.posts;
 
 import com.trial.prince.domain.posts.Posts;
 import com.trial.prince.domain.posts.PostsRepository;
+import com.trial.prince.web.Dto.PostsListResponseDto;
 import com.trial.prince.web.Dto.PostsResponseDto;
 import com.trial.prince.web.Dto.PostsSaveRequestDto;
 import com.trial.prince.web.Dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -33,5 +36,11 @@ public class PostsService {
                 "id=" + id));
 
         return new PostsResponseDto(entity);
+    }
+
+    @Transactional(readOnly = true)
+    public List<PostsListResponseDto> findAllDesc(){
+        return postsRepository.findAllDesc().stream()
+                .map(PostsListResponseDto::new).collect(Collectors.toList());
     }
 }
