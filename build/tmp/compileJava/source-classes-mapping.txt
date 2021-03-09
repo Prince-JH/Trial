@@ -32,10 +32,16 @@ com/trial/prince/service/posts/PostsService.java
  com.trial.prince.service.posts.PostsService
 com/trial/prince/config/auth/SecurityConfig.java
  com.trial.prince.config.auth.SecurityConfig
+com/trial/prince/config/auth/LoginUserArgumentResolver.java
+ com.trial.prince.config.auth.LoginUserArgumentResolver
 com/trial/prince/web/Dto/PostsListResponseDto.java
  com.trial.prince.web.Dto.PostsListResponseDto
 com/trial/prince/web/PostsApiController.java
  com.trial.prince.web.PostsApiController
+com/trial/prince/config/auth/WebConfig.java
+ com.trial.prince.config.auth.WebConfig
+com/trial/prince/config/auth/LoginUser.java
+ com.trial.prince.config.auth.LoginUser
 com/trial/prince/domain/posts/user/Role.java
  com.trial.prince.domain.posts.user.Role
 com/trial/prince/config/auth/dto/OAuthAttributes.java
