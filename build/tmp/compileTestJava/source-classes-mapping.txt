@@ -1,10 +1,10 @@
-com/trial/prince/web/HelloControllerTest.java
- com.trial.prince.web.HelloControllerTest
+com/trial/prince/web/Dto/HelloResponseDtoTest.java
+ com.trial.prince.web.Dto.HelloResponseDtoTest
 com/trial/prince/domain/posts/PostsRepositoryTest.java
  com.trial.prince.domain.posts.PostsRepositoryTest
 com/trial/prince/web/PostsApiControllerTest.java
  com.trial.prince.web.PostsApiControllerTest
 com/trial/prince/web/IndexControllerTest.java
  com.trial.prince.web.IndexControllerTest
-com/trial/prince/web/Dto/HelloResponseDtoTest.java
- com.trial.prince.web.Dto.HelloResponseDtoTest
+com/trial/prince/web/HelloControllerTest.java
+ com.trial.prince.web.HelloControllerTest

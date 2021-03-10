@@ -7,8 +7,8 @@ com/trial/prince/web/Dto/HelloResponseDto.java
  com.trial.prince.web.Dto.HelloResponseDto
 com/trial/prince/web/IndexController.java
  com.trial.prince.web.IndexController
-com/trial/prince/Application.java
- com.trial.prince.Application
+com/trial/prince/config/auth/CustomOAuth2UserService.java
+ com.trial.prince.config.auth.CustomOAuth2UserService
 com/trial/prince/web/Dto/PostsUpdateRequestDto.java
  com.trial.prince.web.Dto.PostsUpdateRequestDto
  com.trial.prince.web.Dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
@@ -47,5 +47,7 @@ com/trial/prince/domain/posts/user/Role.java
 com/trial/prince/config/auth/dto/OAuthAttributes.java
  com.trial.prince.config.auth.dto.OAuthAttributes
  com.trial.prince.config.auth.dto.OAuthAttributes$OAuthAttributesBuilder
-com/trial/prince/config/auth/CustomOAuth2UserService.java
- com.trial.prince.config.auth.CustomOAuth2UserService
+com/trial/prince/Application.java
+ com.trial.prince.Application
+com/trial/prince/config/auth/JpaConfig.java
+ com.trial.prince.config.auth.JpaConfig
