@@ -17,8 +17,25 @@ cache:
 
 script: "./gradlew clean build"
 
+before_deploy:
+  -zip -r Trial *
+  -mkdir -p deploy
+  -mv Trial.zip deploy/Trial.zip
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY #AKIA42JRTA3N5JFTNXFQ
+    secret_access_key: $AWS_SECRET_KEY #oyqrWvg3gQrlSfepAN9w625RqqojD0Y9PSEjjmP+
+    bucket: trial-springboot-build # S3 버킷
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private # zip 파일 접근 private으로
+    local_dir: deploy
+    wait-until-deployed: true
+
 # CI 실행 완료 시 메일로 알람
 notifications:
   email:
     recipients:
       - aljihoon@ajou.ac.kr
+
