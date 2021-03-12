@@ -18,9 +18,9 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  -zip -r Trial *
+  -zip -r trial-springboot2-webservice *
   -mkdir -p deploy
-  -mv Trial.zip deploy/Trial.zip
+  -mv trial-springboot2-webservice.zip deploy/trial-springboot2-webservice.zip
 
 deploy:
   - provider: s3
